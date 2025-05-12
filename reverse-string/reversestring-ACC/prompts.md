@@ -62,3 +62,13 @@ Remember: only must reverse and show the string if the input text has 3 or more 
 ```markdown
 I've detected a bug: if I enter a text with more than 3 characters and reload the page, the input keeps the same text but the button is not shown.
 ```
+
+## Fourth prompt
+
+```markdown
+Acceptance criteria change:
+
+Instead of the string is reversed when users press the enter key or clicks on the button, the string must be reversed every time the user enter a new character only when the input string has at least 3 characters.
+
+If the user inputs a string and reloads the page, if the string that is in the input has at least 3 characters must be reversed automatically once the web is loaded.
+```

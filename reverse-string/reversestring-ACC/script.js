@@ -11,6 +11,8 @@ document.addEventListener('DOMContentLoaded', function() {
         if (originalText.length >= 3) {
             const reversedText = originalText.split('').reverse().join('');
             resultDiv.textContent = reversedText;
+        } else {
+            resultDiv.textContent = '';
         }
     }
     
@@ -18,6 +20,8 @@ document.addEventListener('DOMContentLoaded', function() {
     function checkInputLength() {
         if (textInput.value.length >= 3) {
             reverseButton.style.display = 'inline-block';
+            // Automatically reverse the string when it reaches 3+ characters
+            reverseString();
         } else {
             reverseButton.style.display = 'none';
             // Clear result if input is less than 3 characters
@@ -25,20 +29,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    // Check input length on page load (fixes the reload bug)
+    // Check input length on page load (fixes the reload bug and auto-reverses existing text)
     checkInputLength();
     
     // Add input event listener to show/hide the button based on input length
+    // and automatically reverse the string
     textInput.addEventListener('input', checkInputLength);
     
-    // Add click event listener for the reverse button
+    // Add click event listener for the reverse button (now optional since it reverses automatically)
     reverseButton.addEventListener('click', reverseString);
-    
-    // Add keypress event listener for the Enter key
-    textInput.addEventListener('keypress', function(event) {
-        if (event.key === 'Enter' && textInput.value.length >= 3) {
-            event.preventDefault(); // Prevent form submission if in a form
-            reverseString();
-        }
-    });
 });
