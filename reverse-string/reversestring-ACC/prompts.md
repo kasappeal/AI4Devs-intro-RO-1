@@ -56,3 +56,9 @@ New acceptance criteria: the user can click the button or push the "enter" key t
 
 Remember: only must reverse and show the string if the input text has 3 or more characters.
 ```
+
+## Third prompt
+
+```markdown
+I've detected a bug: if I enter a text with more than 3 characters and reload the page, the input keeps the same text but the button is not shown.
+```

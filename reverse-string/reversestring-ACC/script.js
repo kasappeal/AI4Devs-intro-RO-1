@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    // Add input event listener to show/hide the button based on input length
-    textInput.addEventListener('input', function() {
+    // Function to check input length and show/hide button accordingly
+    function checkInputLength() {
         if (textInput.value.length >= 3) {
             reverseButton.style.display = 'inline-block';
         } else {
@@ -23,7 +23,13 @@ document.addEventListener('DOMContentLoaded', function() {
             // Clear result if input is less than 3 characters
             resultDiv.textContent = '';
         }
-    });
+    }
+    
+    // Check input length on page load (fixes the reload bug)
+    checkInputLength();
+    
+    // Add input event listener to show/hide the button based on input length
+    textInput.addEventListener('input', checkInputLength);
     
     // Add click event listener for the reverse button
     reverseButton.addEventListener('click', reverseString);
