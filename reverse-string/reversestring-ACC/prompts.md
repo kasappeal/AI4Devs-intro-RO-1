@@ -1,0 +1,50 @@
+# Prompts
+
+AI used: Claude 3.7 Sonnet 
+
+## First prompt:
+
+```markdown
+## Task description
+
+Starting with this code:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse String</title>    
+</head>
+<body>
+<script src="script.js"></script>
+</body>
+</html>
+
+Create a web that ask for text as input from the user and when the users clicks in a button, reverse the text introduced by the user as input.
+
+## Acceptance criteria
+
+    The button must appear hidden by default
+    The button will show up when user inputs more than three characters
+
+Step by step example:
+
+    The user wants to input the string "matrix"
+    The user inputs the character "m". The button doesn't show up.
+    The user inputs the character "a". The button doesn't show up.
+    The user inputs the character "t". The button shows up!
+    The user deletes the last character. The button hides.
+    The user deletes the last character. The button doesn't show up.
+    The user adds the character "a". The button doesn't show up.
+    The user adds the character "t". The button shows up!
+    The user adds the character "r". The button keeps shown.
+    The user adds the character "i". The button keeps shown.
+    The user adds the character "x". The button keeps shown.
+    The user clicks the button.
+    Below the input, appears the text input by the user "matrix" but in reverse: "xirtam"
+
+## Expected output
+
+The expected output is the final code to be placed in the index.html and script.js files.
+```
