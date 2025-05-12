@@ -48,3 +48,11 @@ Step by step example:
 
 The expected output is the final code to be placed in the index.html and script.js files.
 ```
+
+## Second prompt
+
+```markdown
+New acceptance criteria: the user can click the button or push the "enter" key to reverse the string. 
+
+Remember: only must reverse and show the string if the input text has 3 or more characters.
+```
