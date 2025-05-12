@@ -72,3 +72,9 @@ Instead of the string is reversed when users press the enter key or clicks on th
 
 If the user inputs a string and reloads the page, if the string that is in the input has at least 3 characters must be reversed automatically once the web is loaded.
 ```
+
+## Fifth prompt
+
+```markdown
+Remove the button because it is not needed anymore
+```
